@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kontakt · Atelier Verant</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Erstgespräch mit Atelier Verant vereinbaren – im Studio am Isarkai oder auf Ihrem Grundstück.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=IBM+Plex+Mono:wght@400&family=Manrope:wght@300;400;500;600&display=swap">
+<link rel="preload" as="image" href="assets/img/atelierhaus.jpg">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="curtain" aria-hidden="true"><span>Kontakt</span></div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html" data-word="Verant" aria-label="Atelier Verant – Startseite">Verant</a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="index.html#projekte" data-word="Projekte">Projekte</a>
+      <a href="index.html#studio" data-word="Studio">Studio</a>
+      <a href="leistungen.html" data-word="Leistungen">Leistungen</a>
+      <a href="kontakt.html" aria-current="page" data-word="Kontakt">Kontakt</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu"><span class="label">Menü</span><span class="bars"></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <div class="wrap">
+    <nav aria-label="Mobile Navigation">
+      <a href="index.html" data-word="Verant">Start</a>
+      <a href="index.html#projekte" data-word="Projekte">Projekte</a>
+      <a href="leistungen.html" data-word="Leistungen">Leistungen</a>
+      <a href="kontakt.html" data-word="Kontakt">Kontakt</a>
+    </nav>
+  </div>
+  <div class="wrap mm-foot muted">
+    <span>Am Isarkai 7, 80469 München</span>
+    <span>studio@atelier-verant.de</span>
+  </div>
+</div>
+
+<main>
+  <div class="split">
+    <figure class="split-media">
+      <div class="ph"><img src="assets/img/atelierhaus.jpg" alt="Haus mit Holzlamellen-Erker und warm erleuchtetem Treppenraum zur blauen Stunde" fetchpriority="high"></div>
+      <figcaption data-hero-fade><span>Studio am Isarkai</span><span>Mo – Fr, ab 9 Uhr</span></figcaption>
+    </figure>
+
+    <div class="split-body" data-hero>
+      <div>
+        <span class="label" data-hero-fade>Kontakt</span>
+        <h1 style="margin-top: 24px">
+          <span class="line-mask"><span>Erzählen Sie</span></span>
+          <span class="line-mask"><span>uns von</span></span>
+          <span class="line-mask"><span>Ihrem Ort.</span></span>
+        </h1>
+        <p class="lead" data-hero-fade>Ein Grundstück am Hang, ein Bauernhaus mit Geschichte oder bisher nur eine Idee: Jedes Projekt beginnt bei uns mit einem persönlichen Gespräch. Wir antworten innerhalb von zwei Werktagen.</p>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-block" data-reveal>
+          <span class="label">Studio</span>
+          <p class="big">Am Isarkai 7<br>80469 München</p>
+          <p class="muted" style="font-size:.9rem">U1/U2 Fraunhoferstraße, 6 Minuten zu Fuß</p>
+        </div>
+        <div class="info-block" data-reveal data-delay="0.08">
+          <span class="label">Sprechzeiten</span>
+          <div class="hours"><span>Mo – Do</span><span>09:00 – 18:30</span><span>Fr</span><span>09:00 – 15:00</span><span>Sa</span><span>nach Vereinbarung</span></div>
+        </div>
+        <div class="info-block" data-reveal>
+          <span class="label">Schreiben</span>
+          <div class="copy-row"><p class="big" id="mail-text">studio@atelier-verant.de</p></div>
+          <div><button class="copy-btn" type="button" data-copy="studio@atelier-verant.de" data-target="mail-text">Kopieren</button></div>
+        </div>
+        <div class="info-block" data-reveal data-delay="0.08">
+          <span class="label">Anrufen</span>
+          <div class="copy-row"><p class="big" id="tel-text">+49 89 412 078 30</p></div>
+          <div><button class="copy-btn" type="button" data-copy="+49 89 412 078 30" data-target="tel-text">Kopieren</button></div>
+        </div>
+      </div>
+
+      <div id="anfrage">
+        <h2 style="font-size: var(--step-3); margin-bottom: 40px" data-split-lines><span class="line-mask"><span>Ihre Anfrage</span></span></h2>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <input id="f-name" name="name" type="text" placeholder=" " autocomplete="name" data-required>
+              <label for="f-name">Ihr Name</label>
+              <span class="line"></span>
+              <span class="err" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <input id="f-mail" name="email" type="email" placeholder=" " autocomplete="email" data-required>
+              <label for="f-mail">E-Mail-Adresse</label>
+              <span class="line"></span>
+              <span class="err" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <input id="f-phone" name="phone" type="tel" placeholder=" " autocomplete="tel">
+              <label for="f-phone">Telefon (optional)</label>
+              <span class="line"></span>
+            </div>
+            <div class="field">
+              <input id="f-place" name="place" type="text" placeholder=" ">
+              <label for="f-place">Ort des Vorhabens</label>
+              <span class="line"></span>
+            </div>
+          </div>
+
+          <fieldset>
+            <legend class="label">Art des Projekts</legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" id="t-neubau" name="type" value="Neubau"><span>Neubau</span></label>
+              <label class="chip"><input type="checkbox" id="t-umbau" name="type" value="Umbau"><span>Umbau &amp; Sanierung</span></label>
+              <label class="chip"><input type="checkbox" id="t-denkmal" name="type" value="Denkmal"><span>Denkmal</span></label>
+              <label class="chip"><input type="checkbox" id="t-interior" name="type" value="Innenarchitektur"><span>Innenarchitektur</span></label>
+              <label class="chip"><input type="checkbox" id="t-garten" name="type" value="Freiraum"><span>Garten &amp; Freiraum</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="label">Budget für Bauwerk und Technik</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" id="b-1" name="budget" value="unter 1 Mio."><span>unter 1 Mio. €</span></label>
+              <label class="chip"><input type="radio" id="b-2" name="budget" value="1–3 Mio."><span>1 – 3 Mio. €</span></label>
+              <label class="chip"><input type="radio" id="b-3" name="budget" value="3–10 Mio."><span>3 – 10 Mio. €</span></label>
+              <label class="chip"><input type="radio" id="b-4" name="budget" value="über 10 Mio."><span>über 10 Mio. €</span></label>
+              <label class="chip"><input type="radio" id="b-5" name="budget" value="offen"><span>noch offen</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <textarea id="f-msg" name="message" placeholder=" " rows="5" data-required></textarea>
+            <label for="f-msg">Was planen Sie?</label>
+            <span class="line"></span>
+            <span class="err" aria-live="polite"></span>
+          </div>
+
+          <div>
+            <label class="consent" for="f-consent">
+              <input type="checkbox" id="f-consent" name="consent">
+              <span>Ich bin einverstanden, dass meine Angaben zur Bearbeitung der Anfrage gespeichert werden. Die Einwilligung kann ich jederzeit widerrufen.</span>
+            </label>
+            <span class="err" id="consent-err" aria-live="polite"></span>
+          </div>
+
+          <div class="form-foot">
+            <small>Demo-Formular, es werden keine Daten versendet.</small>
+            <button class="btn btn--light" type="submit">Anfrage senden <span class="arrow">→</span></button>
+          </div>
+        </form>
+
+        <div class="form-success" id="form-success" hidden>
+          <span class="label">Anfrage erhalten</span>
+          <h2>Danke, <span id="success-name">Sie</span>.</h2>
+          <p>Ihre Nachricht ist angekommen. Wir melden uns innerhalb von zwei Werktagen, um einen Termin im Studio oder auf Ihrem Grundstück zu vereinbaren.</p>
+          <p class="muted" style="font-size:.85rem">Hinweis: Dies ist ein Demo-Formular. Es wurden keine Daten übertragen.</p>
+          <div><button class="btn" type="button" id="form-reset">Neue Anfrage <span class="arrow">→</span></button></div>
+        </div>
+      </div>
+
+      <div>
+        <h2 style="font-size: var(--step-2); margin-bottom: 32px" data-split-lines><span class="line-mask"><span>Was nach Ihrer Nachricht passiert</span></span></h2>
+        <div class="steps">
+          <article class="step" data-reveal><span class="label">Woche 1</span><h3>Rückruf</h3><p>In 20 Minuten klären wir, ob Ihr Vorhaben und unser Büro zueinander passen.</p></article>
+          <article class="step" data-reveal data-delay="0.1"><span class="label">Woche 2 – 3</span><h3>Ortsbegehung</h3><p>Wir besuchen Ihr Grundstück oder Gebäude, messen, fotografieren und hören zu.</p></article>
+          <article class="step" data-reveal data-delay="0.2"><span class="label">Woche 4</span><h3>Angebot</h3><p>Sie erhalten ein Honorarangebot nach HOAI und eine erste Skizze unseres Ansatzes.</p></article>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="credits">
+  <div class="wrap">
+    <dl class="credits-roll">
+      <div class="credit"><dt>Ein Büro von</dt><dd>Lena Verant &amp; Jonas Marek</dd></div>
+      <div class="credit"><dt>Architektur &amp; Raum</dt><dd>Atelier Verant, seit 2009</dd></div>
+      <div class="credits-gap"></div>
+      <div class="credit"><dt>Studio</dt><dd>Am Isarkai 7, 80469 München</dd></div>
+      <div class="credit"><dt>Schreiben</dt><dd>studio@atelier-verant.de</dd></div>
+      <div class="credit"><dt>Anrufen</dt><dd>+49 89 412 078 30</dd></div>
+      <div class="credits-gap"></div>
+      <div class="credit"><dt>Seiten</dt><dd><a href="index.html" data-word="Verant">Start</a> · <a href="leistungen.html" data-word="Leistungen">Leistungen</a> · <a href="kontakt.html" data-word="Kontakt">Kontakt</a></dd></div>
+      <div class="credit"><dt>Fotografie</dt><dd>Unsplash, freie Lizenz</dd></div>
+    </dl>
+    <div class="wordmark" aria-hidden="true">VERANT</div>
+    <div class="credits-bottom">
+      <span>© <span data-year>2026</span> Atelier Verant</span>
+      <span>Fiktives Büro · Portfolio-Projekt</span>
+      <span>Impressum · Datenschutz</span>
+    </div>
+  </div>
+</footer>
+
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
